@@ -11,7 +11,6 @@ img {
 }
 
 body {
-  background: #f4f4f4;
   font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
@@ -22,10 +21,42 @@ body {
 
 div {
   text-align: center;
-  padding: 3rem 2rem 2rem;
+  padding: 3rem 2rem 1rem;
 }
 
 h2 {
   font-size: 2.3rem;
   margin-bottom: 0.4rem;
+}
+
+h3 {
+  margin-top: 1.5rem;
+  color: #1c238a;
+}
+
+.mobile,
+.tablet {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop,
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .desktop,
+  .tablet {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
 }

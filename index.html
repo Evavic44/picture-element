@@ -9,12 +9,14 @@
   </head>
   <body>
     <div>
-      <h2>Picture Element</h2>
+      <h2 class="desktop">Desktop</h2>
+      <h2 class="tablet">Tablet</h2>
+      <h2 class="mobile">Mobile</h2>
       <p>Resize your browser to see the effect. 🙃</p>
     </div>
 
     <picture>
-      <source media="(min-width: 800px)" srcset="desktop-image.gif" />
+      <source media="(min-width: 768px)" srcset="desktop-image.gif" />
       <source media="(min-width: 500px)" srcset="tablet-image.png" />
       <img src="mobile-image.png" alt="Banner image" />
     </picture>
