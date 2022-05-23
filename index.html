@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picture Element</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h2>Picture Element</h2>
+      <p>Resize your browser to see the effect. 🙃</p>
+    </div>
+
+    <picture>
+      <source media="(min-width: 800px)" srcset="desktop-image.gif" />
+      <source media="(min-width: 500px)" srcset="tablet-image.png" />
+      <img src="mobile-image.png" alt="Banner image" />
+    </picture>
+  </body>
+</html>
