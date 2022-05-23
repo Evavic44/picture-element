@@ -12,7 +12,7 @@ There are a few use-case scenarios in which the picture tag can be very useful, 
 
 ```html
 <picture>
-   <source media="(min-width: 800px)" srcset="desktop-image.gif" />
+   <source media="(min-width: 768px)" srcset="desktop-image.gif" />
    <source media="(min-width: 500px)" srcset="tablet-image.png" />
    <img src="mobile-image.png" alt="Banner image" />
 </picture>
